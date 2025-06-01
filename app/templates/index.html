@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyza'ya Aşkım</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body >
+    <div class="container">
+        <h1 class="main-title">Beyza'ya Sonsuz Aşkım</h1>
+        <div class="heart-container">
+            <div class="heart"></div>
+            <div class="heart heart2"></div>
+            <div class="heart heart3"></div>
+        </div>
+        <div class="quote-section">
+            <h2>Senin İçin Güzel Bir Söz</h2>
+            <p class="quote">{{ quote }}</p>
+        </div>
+        <div class="footer">
+            <p>❤️ Seni çok seviyorum yavrum ❤️</p>
+        </div>
+    </div>
+</body>
+</html>
