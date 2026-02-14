@@ -98,8 +98,8 @@ body {
 }
 
 /* Gecikmeler */
-.heart2 { animation-delay: 0.5s; }
-.heart3 { animation-delay: 1s; }
+.heart2 { animation-delay: 2s; }
+.heart3 { animation-delay: 2s; }
 
 /* Puls + Glow animasyonu */
 @keyframes pulseGlow {
