@@ -41,20 +41,51 @@ body {
 }
 
 .main-title {
-    color: #ffffff;
+    color: #ffffff; /* parlak beyaz */
     font-size: 2.3rem;
     margin-bottom: 18px;
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     line-height: 1.3;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* arka plana karşı kontrast */
 }
 
 .subtitle {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 20px;
-    color: #ffd6e7;
+    color: #ffb6c1; /* daha canlı pembe */
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
+
+.quote-section h2 {
+    color: #ffe3ec; /* hafif pembemsi canlı */
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+.quote {
+    font-size: 1.15rem;
+    color: #ffffff; /* parlak beyaz */
+    font-style: italic;
+    background: rgba(255, 0, 102, 0.25); /* biraz daha opak pembe ton */
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 15px rgba(255, 77, 109, 0.5);
+    line-height: 1.6;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+
+.footer {
+    margin-top: 22px;
+    color: #ff99b6; /* daha parlak pembe */
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
 
 /* Kalp Alanı */
 /* Kalp Alanı */
