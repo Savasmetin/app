@@ -1,46 +1,73 @@
 body {
-    background:  url("../img/arkaplan.jpg") no-repeat center center fixed;
+    background: url("../img/arkaplan.jpg") no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+/* Hafif koyu overlay (yazılar daha net görünsün diye) */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    z-index: 0;
 }
 
 .container {
-    background: rgba(255,255,255,0.85);
-    border-radius: 24px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    padding: 40px 32px 24px 32px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(18px);
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    padding: 50px 40px 30px 40px;
     text-align: center;
-    max-width: 400px;
+    max-width: 500px;
+    color: white;
+    animation: fadeIn 1.5s ease;
 }
 
 .main-title {
-    color: #e75480;
-    font-size: 2.2rem;
-    margin-bottom: 16px;
-    font-family: 'Brush Script MT', cursive, sans-serif;
+    color: #ffffff;
+    font-size: 2.3rem;
+    margin-bottom: 18px;
+    font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
+    line-height: 1.3;
 }
 
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #ffd6e7;
+}
+
+/* Kalp Alanı */
 .heart-container {
-    margin: 24px 0;
+    margin: 28px 0;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 .heart {
-    width: 48px;
-    height: 48px;
-    background: #e75480;
+    width: 50px;
+    height: 50px;
+    background: #ff4d6d;
     position: relative;
     transform: rotate(-45deg);
-    animation: pulse 1.2s infinite;
+    animation: pulse 1.4s infinite ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 77, 109, 0.8);
 }
+
 .heart2 { animation-delay: 0.4s; }
 .heart3 { animation-delay: 0.8s; }
 
@@ -48,50 +75,60 @@ body {
 .heart:after {
     content: "";
     position: absolute;
-    width: 48px;
-    height: 48px;
-    background: #e75480;
+    width: 50px;
+    height: 50px;
+    background: #ff4d6d;
     border-radius: 50%;
 }
 
 .heart:before {
-    top: -24px;
+    top: -25px;
     left: 0;
 }
+
 .heart:after {
-    left: 24px;
+    left: 25px;
     top: 0;
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1) rotate(-45deg);}
-    50% { transform: scale(1.15) rotate(-45deg);}
+    0%, 100% { transform: scale(1) rotate(-45deg); }
+    50% { transform: scale(1.2) rotate(-45deg); }
 }
 
+/* Söz Bölümü */
 .quote-section {
-    margin: 24px 0 12px 0;
+    margin: 30px 0 15px 0;
 }
 
 .quote-section h2 {
-    color: #b83260;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+    color: #ffe3ec;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
 .quote {
-    font-size: 1.1rem;
-    color: #333;
+    font-size: 1.15rem;
+    color: #fff;
     font-style: italic;
-    background: #fff0f6;
-    border-radius: 12px;
-    padding: 16px;
-    box-shadow: 0 2px 8px rgba(231,84,128,0.08);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
+    line-height: 1.6;
 }
 
+/* Footer */
 .footer {
-    margin-top: 18px;
-    color: #e75480;
-    font-weight: bold;
+    margin-top: 22px;
+    color: #ffd6e7;
+    font-weight: 600;
     font-size: 1.1rem;
     letter-spacing: 1px;
+}
+
+/* Yumuşak açılış animasyonu */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
