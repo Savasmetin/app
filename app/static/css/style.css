@@ -1,7 +1,6 @@
 body {
-    background: url("../img/arkaplan.jpg") repeat-x; /* tekrar eden yatay arka plan */
+    background: url("../img/arkaplan.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-position: 0 0;
     min-height: 100vh;
     margin: 0;
     font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
@@ -9,21 +8,17 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-
-    /* Animasyonu uygulama */
-    animation: moveBackground 30s linear infinite; /* süreyi ayarlayabilirsin */
 }
 
-/* Arka plan hareket animasyonu */
-@keyframes moveBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0; /* sağa doğru kaydır */
-    }
+/* Hafif koyu overlay (yazılar daha net görünsün diye) */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(3px);
+    z-index: 0;
 }
-
 
 .container {
     position: relative;
