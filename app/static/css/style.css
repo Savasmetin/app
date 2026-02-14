@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
     display: flex;
+    backdrop-filter: blur(1px);
     align-items: center;
     justify-content: center;
     position: relative;
