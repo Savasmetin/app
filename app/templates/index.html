@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyza'ya Aşkım</title>
+    <title>Sevgililer Günümüz Kutlu Olsun ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body >
+<body>
+    <div class="overlay"></div>
+
     <div class="container">
-        <h1 class="main-title">Beyza'ya Sonsuz Aşkım</h1>
+        <h1 class="main-title">
+            Beyza’ya, hayatımın anlamı kadına olan aşkım ❤️
+        </h1>
+
+        <h2 class="subtitle">
+            14 Şubat Sevgililer Günümüz Kutlu Olsun sevgilim💕
+        </h2>
+
         <div class="heart-container">
             <div class="heart"></div>
             <div class="heart heart2"></div>
             <div class="heart heart3"></div>
         </div>
+
         <div class="quote-section">
-            <h2>Senin İçin Güzel Bir Söz</h2>
-            <p class="quote">{{ quote }}</p>
+            <h2>Senin İçin Bir Sevgi Sözü 💌</h2>
+            <p class="quote">"{{ quote }}"</p>
         </div>
+
         <div class="footer">
-            <p>❤️ Seni çok seviyorum yavrum ❤️</p>
+            <p>❤️ Sen benim en güzel mucizemsin. Seni sonsuz seviyorum ❤️</p>
         </div>
     </div>
 </body>
