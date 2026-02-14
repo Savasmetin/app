@@ -2,11 +2,11 @@ from flask import render_template, current_app as app
 import random
 
 quotes = [
-    "Seninle bir ömre değil, sonsuzluğa göz kırpıyorum.",
-    "Kalbim, senin adını her atışında bir dua gibi fısıldıyor.",
-    "Aşk, zamanın ötesinde iki ruhun birbirine yazılmış kaderidir.",
-    "Sensizlik, kelimelerin kifayetsiz kaldığı en uzun cümlemdir.",
-    "Gözlerin, karanlık gecelerde bile yolumu aydınlatan tek yıldızdır."
+    "Ben seni bir ömür sevmeye değil, sana bir ömür olmaya geldim.",
+    "Kalbimde taşıdığım en büyük hakikat, sana duyduğum aşktır.",
+    "Sana her baktığımda, dünyayı değil; kendi cennetimi görürüm.",
+    "Benim için aşk, adını içimde sakladığım en kıymetli sırdır.",
+    "Sensiz geçen zaman, varlığınla telafi edilen bir eksiklikten ibarettir."
 ]
 
 
